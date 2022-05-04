@@ -10,9 +10,9 @@ public class Main {
                 .build();
         Person son = mom.newChildBuilder()
                 .setName("Антошка")
+                .setAge(2)
                 .build();
         System.out.println("У " + mom + " есть сын, " + son);
-        System.out.println(son.getAge());
 
         try {
             // Не хватает обяхательных полей
