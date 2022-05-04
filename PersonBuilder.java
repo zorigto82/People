@@ -29,6 +29,9 @@ public class PersonBuilder {
     }
 
     public Person build() {
+        if(this.name == null || this.surname == null){
+            throw new IllegalStateException();
+        }
         return new Person(this);
     }
 }
